@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+﻿package com.example.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -40,11 +40,17 @@ public class HomeController {
         return "index";
     }
 	
+
 	@RequestMapping("/pd/pdList")
 	public String pdList() {        
 		return "pd/pdList";
 	}
 	
+	@RequestMapping("/test1")
+	public String test1() {        
+		return "test1";
+	}
+
 	@GetMapping("/hello")
 	public String hello(Model model) {
 		model.addAttribute("name", "홍길동");
