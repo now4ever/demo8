@@ -7,9 +7,10 @@
 <title>index.jsp</title>
 </head>
 <body>
-<h1>jsp - main 페이지입니다.</h1>
+<h1>jsp - main 페이지입니다.!!!</h1>
 
 <!-- http://localhost:9091/ -->
 
+<h2>팀장이 추가함</h2>
 </body>
 </html>
