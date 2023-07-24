@@ -35,10 +35,16 @@ public class HomeController {
 	}
 
 	@RequestMapping("/")
-    public String index() {        
+    public String index() { 
+		System.out.println("index page!");
         return "index";
     }
-
+	
+	@RequestMapping("/pd/pdList")
+	public String pdList() {        
+		return "pd/pdList";
+	}
+	
 	@GetMapping("/hello")
 	public String hello(Model model) {
 		model.addAttribute("name", "홍길동");
