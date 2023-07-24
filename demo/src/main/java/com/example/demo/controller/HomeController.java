@@ -38,6 +38,11 @@ public class HomeController {
     public String index() {        
         return "index";
     }
+	
+	@RequestMapping("/test1")
+	public String test1() {        
+		return "test1";
+	}
 
 	@GetMapping("/hello")
 	public String hello(Model model) {
