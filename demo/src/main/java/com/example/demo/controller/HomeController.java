@@ -41,8 +41,15 @@ public class HomeController {
     }
 	
 	@RequestMapping("/pd/pdList")
-	public String pdList() {        
+	public String pdList() {  
+		System.out.println("pdList page");
 		return "pd/pdList";
+	}
+	
+	@GetMapping("/pd/pdWrite")
+	public String pdWrite() {  
+		System.out.println("pdwrite page");
+		return "pd/pdWrite";
 	}
 	
 	@GetMapping("/hello")
